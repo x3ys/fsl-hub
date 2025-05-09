@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon-fsl.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FSL Hub - Play</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/favicon-fsl.png" alt="FSL Logo"></a>
+                <h1>FSL Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="link"><a href="/homepage.html">Home</a></li>
+                <li class="link"><a href="/learn.html">Learn</a></li>
+                <li class="link"><a href="/play.html">Play</a></li>
+                <li class="link"><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="play-section" id="playSection">
+        <h2>Play with FSL</h2>
+        <p>Engage with interactive content and games to enhance your learning experience.</p>
+        <div class="play-container">
+            <div class="game-card">
+                <h3>FSL Quiz</h3>
+                <p>Test your knowledge of Filipino Sign Language with our fun quiz!</p>
+                <button onclick="startGame()">Start Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-container" id="quizContainer" style="display: none;">
+        <h1 id="quizTitle">FSL Quiz Game</h1>
+        <p id="quizInstruction">What does this sign mean?</p>
+
+        <img id="quizImage" src="" alt="FSL Sign" class="quiz-image">
+
+        <input type="text" id="userInput" class="input-answer" placeholder="Your answer here">
+        <button onclick="submitAnswer()">Submit</button>
+        <p id="feedback" class="feedback-text"></p>
+        
+        <button onclick="endGame()" class="stop-button">Stop</button>
+
+        <div class="score" id="scoreBox">Score: <span id="score">0</span></div>
+    </div>
+
+    
+    <footer class="footer-about">
+        <div class="footer-content-about">
+            <p>&copy; 2025 FSL Hub. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><img src="assets/fb.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/"><img src="assets/ig.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

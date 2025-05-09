@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon-fsl.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FSL Hub</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/favicon-fsl.png" alt="FSL Logo"></a>
+                <h1>FSL Hub</h1>
+            </div>
+            
+            <button class="login-btn" onclick="openLoginPopup()">
+                Login
+            </button>
+        </nav>
+    </header>
+    
+    <div class="hero-section">
+        <div class="hero-image">
+            <img src="assets/highlight.JPG">
+        </div>
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1>FSL Hub</h1>
+            </div>
+            <div class="hero-p">
+                <p>Mabuhay! Let’s learn Filipino Sign Language together.</p>
+                <p>Learn, Play, and Explore with FSL Hub!</p>
+            </div>
+            <div class="hero-btn">
+                <a href="#" class="start-learning-btn" onclick="openLoginPopup()">Let's start!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="login-popup" id="loginPopup">
+        <div class="form-title">
+            <h2>Login</h2>
+        </div>
+        <div class="close-btn">
+            <a href="#" onclick="closeLoginPopup()">&times;</a>
+        </div>
+        <form action="#" id="login-form" autocomplete="off">
+            <label for="email">Email:</label>
+            <div class="user-input">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <label for="password">Password:</label>
+            <div class="user-input">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="create-account">
+                <p>Don't have an account? <a href="#" onclick="openRegisterPopup()">Create one</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="register-popup" id="registerPopup">
+        <div class="form-title">
+            <h2>Create Account</h2>
+        </div>
+        <div class="close-btn">
+            <a href="#" onclick="closeRegisterPopup()">&times;</a>
+        </div>
+        <form action="#" id="login-form" autocomplete="off">
+            <label for="email">Email:</label>
+            <div class="user-input">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <label for="password">Password:</label>
+            <div class="user-input">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <label for="confirm-password">Confirm Password:</label>
+            <div class="user-input">
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit">Create Account</button>
+            <div class="login-account">
+                <p>Already have an account? <a href="#" onclick="openLoginPopup()">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
