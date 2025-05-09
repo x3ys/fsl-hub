@@ -104,7 +104,7 @@ function loadQuestion() {
 }
 
 function submitAnswer() {
-  const input = document.getElementById("userInput").value.trim().toLowerCase();
+  const input = document.getElementById("userInput").value.trim().toUpperCase();
   const feedback = document.getElementById("feedback");
 
   if (input === currentQuestion.answer) {

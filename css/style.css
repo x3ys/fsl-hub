@@ -755,7 +755,7 @@ nav {
     padding: 0.6rem 1rem;
     margin: 0.3rem;
     font-size: 1rem;
-    background-color: #4CAF50;
+    background-color: #405cff;
     color: white;
     border: none;
     border-radius: 6px;
@@ -766,7 +766,7 @@ nav {
     padding: 0.6rem 1rem;
     margin: 0.3rem;
     font-size: 1rem;
-    background-color: #4CAF50;
+    background-color: #005bd1;
     color: white;
     border: none;
     border-radius: 6px;
@@ -774,7 +774,7 @@ nav {
 }
 
 .quiz-container button:hover {
-    background-color: #45a049;
+    background-color: #005bd1;
 }
 
 #userInput {
@@ -828,7 +828,7 @@ nav {
 .hp-h-explore {
     position: absolute;
     top: 24%;
-    left: 26%;
+    left: 31%;
     transform: translate(-50%, -50%);
     padding: 20px 30px;
     border-radius: 15px;
