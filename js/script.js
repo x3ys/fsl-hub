@@ -35,32 +35,32 @@ function closeModal() {
 }
 
 const questions = [
-    { image: "/assets/images/a.png", answer: "a" },
-    { image: "/assets/images/b.png", answer: "b" },
-    { image: "/assets/images/c.png", answer: "c" },
-    { image: "/assets/images/d.png", answer: "d" },
-    { image: "/assets/images/e.png", answer: "e" },
-    { image: "/assets/images/f.png", answer: "f" },
-    { image: "/assets/images/g.png", answer: "g" },
-    { image: "/assets/images/h.png", answer: "h" },
-    { image: "/assets/images/i.png", answer: "i" },
-    { image: "/assets/images/j.png", answer: "j" },
-    { image: "/assets/images/k.png", answer: "k" },
-    { image: "/assets/images/l.png", answer: "l" },
-    { image: "/assets/images/m.png", answer: "m" },
-    { image: "/assets/images/n.png", answer: "n" },
-    { image: "/assets/images/o.png", answer: "o" },
-    { image: "/assets/images/p.png", answer: "p" },
-    { image: "/assets/images/q.png", answer: "q" },
-    { image: "/assets/images/r.png", answer: "r" },
-    { image: "/assets/images/s.png", answer: "s" },
-    { image: "/assets/images/t.png", answer: "t" },
-    { image: "/assets/images/u.png", answer: "u" },
-    { image: "/assets/images/v.png", answer: "v" },
-    { image: "/assets/images/w.png", answer: "w" },
-    { image: "/assets/images/x.png", answer: "x" },
-    { image: "/assets/images/y.png", answer: "y" },
-    { image: "/assets/images/z.png", answer: "z" },
+    { image: "/assets/images/A.png", answer: "A" },
+    { image: "/assets/images/B.png", answer: "B" },
+    { image: "/assets/images/C.png", answer: "C" },
+    { image: "/assets/images/D.png", answer: "D" },
+    { image: "/assets/images/E.png", answer: "E" },
+    { image: "/assets/images/F.png", answer: "F" },
+    { image: "/assets/images/G.png", answer: "G" },
+    { image: "/assets/images/H.png", answer: "H" },
+    { image: "/assets/images/I.png", answer: "I" },
+    { image: "/assets/images/J.png", answer: "J" },
+    { image: "/assets/images/K.png", answer: "K" },
+    { image: "/assets/images/L.png", answer: "L" },
+    { image: "/assets/images/M.png", answer: "M" },
+    { image: "/assets/images/N.png", answer: "N" },
+    { image: "/assets/images/O.png", answer: "O" },
+    { image: "/assets/images/P.png", answer: "P" },
+    { image: "/assets/images/Q.png", answer: "Q" },
+    { image: "/assets/images/R.png", answer: "R" },
+    { image: "/assets/images/S.png", answer: "S" },
+    { image: "/assets/images/T.png", answer: "T" },
+    { image: "/assets/images/U.png", answer: "U" },
+    { image: "/assets/images/V.png", answer: "V" },
+    { image: "/assets/images/W.png", answer: "W" },
+    { image: "/assets/images/X.png", answer: "X" },
+    { image: "/assets/images/Y.png", answer: "Y" },
+    { image: "/assets/images/Z.png", answer: "Z" },
     { image: "/assets/images/1.png", answer: "1" },
     { image: "/assets/images/2.png", answer: "2" },
     { image: "/assets/images/3.png", answer: "3" },
@@ -145,20 +145,18 @@ const registerForm = document.querySelectorAll("form")[1];
             return;
         }
 
-        // Check if account already exists
         if (localStorage.getItem(email)) {
             alert("Account already exists!");
             return;
         }
 
-        // Save credentials (note: plaintext for demo purposes only!)
+
         localStorage.setItem(email, JSON.stringify({ password }));
         alert("Account created successfully!");
         registerForm.reset();
         openLoginPopup();
     });
 
-    // Handle Login
   const loginForm = document.querySelectorAll("form")[0];
     loginForm.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -179,7 +177,7 @@ const registerForm = document.querySelectorAll("form")[1];
         }
 
         alert("Login successful!");
-        location.href = "homepage.html"; // Redirect to main page
+        location.href = "homepage.html";
       
       });
 
